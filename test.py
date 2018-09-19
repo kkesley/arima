@@ -1,7 +1,6 @@
 
 from pandas import read_csv
 from pandas import datetime
-from matplotlib import pyplot
 from statsmodels.tsa.arima_model import ARIMA
 from sklearn.metrics import mean_squared_error
 
@@ -25,7 +24,3 @@ for t in range(len(test)):
 	print('predicted=%f, expected=%f' % (yhat, obs))
 error = mean_squared_error(test, predictions)
 print('Test MSE: %.3f' % error)
-# plot
-pyplot.plot(test)
-pyplot.plot(predictions, color='red')
-pyplot.show()
