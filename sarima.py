@@ -14,7 +14,7 @@ train, test = X[0:size], X[size:len(X)]
 history = [x for x in train]
 predictions = list()
 for t in range(len(test)):
-	model = SARIMAX(history, order=(5,1,0) seasonal_order=(1,0,0,3))
+	model = SARIMAX(history, order=(5,1,0),seasonal_order=(1,0,0,3))
 	model_fit = model.fit(disp=0)
 	output = model_fit.forecast()
 	yhat = output[0]
