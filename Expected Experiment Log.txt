@@ -1,0 +1,30 @@
+// Do prediction for future 3, 6, 9, and 12 time steps 
+// Report the RMSE, MAE, and MAPE for all sub-datasets AND the average 
+// For the training, report the total for all dataset
+// If you need some data transformation, record the time separately from the ARIMA model. And also report the total 
+// Don't change the .csv files 
+
+
+Prediction for: Future 3 time steps (15 minutes)
+
+###########
+##Dataset##
+###########
+
+Training:validation:testing split: 80:10:10
+# of all data: 106027607
+# of training data: 84822084
+# of validation data: 10602759
+# of testing data: 10602764
+
+###########
+##Runtime##
+###########
+
+Data transformation time: 1638.0929646492004
+Model training time: 4672.861596
+Total program runtime: 6987.390492916107
+Prediction runtime per sample (in seconds): 0.0003461967706680298
+Testing RMSE: 25.12294895560609
+Testing MAE: 16.899597084219884
+Testing MAPE: 20.729968177782368
